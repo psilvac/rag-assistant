@@ -9,5 +9,3 @@ respuesta = chain.invoke(texto)
 print(respuesta["result"] if isinstance(respuesta, dict) and "result" in respuesta else respuesta)
 # ...existing code...
 
-
-
