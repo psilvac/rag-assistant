@@ -4,6 +4,10 @@ chain = get_rag_chain_llama()
 #print(respuesta)
 
 # ...existing code...
-respuesta = chain.invoke("¿cuales son las instrucciones de pago?")
+texto = input("Introduce el texto a procesar: ")
+respuesta = chain.invoke(texto)
 print(respuesta["result"] if isinstance(respuesta, dict) and "result" in respuesta else respuesta)
 # ...existing code...
+
+
+
