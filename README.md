@@ -1,30 +1,33 @@
-🧠 RAG Knowledge Assistant
+# 🧠 RAG Knowledge Assistant
+
 Smart assistant to query PDF documents using natural language and LLMs. Implements RAG (Retrieval-Augmented Generation) with Prompt Engineering, comparing closed (GPT-4) and open-source (LLaMA/Mistral) models.
 
-📌 Project Description
+## 📌 Project Description
+
 This project demonstrates how to build a GenAI system using Python and LangChain to answer questions from documents, integrating vector search (FAISS), prompt design, and LLMs (OpenAI or HuggingFace).
 
-🛠️ Technologies
-Python 3.10+
+## 🛠️ Technologies
+- Python 3.10+
+  
+- LangChain
+  
+- OpenAI (GPT-4)
+  
+- FAISS
+  
+- FastAPI
+  
+- HuggingFace Transformers
+  
+- PyPDF
+  
+- dotenv
+  
+- Docker (optional)
 
-LangChain
+## 🚀 How to Run
 
-OpenAI (GPT-4)
-
-FAISS
-
-FastAPI
-
-HuggingFace Transformers
-
-PyPDF
-
-dotenv
-
-Docker (optional)
-
-🚀 How to Run
-
+```bash
 # 1. Clone repository
 git clone https://github.com/youruser/rag-knowledge-assistant.git
 cd rag-knowledge-assistant
@@ -42,29 +45,31 @@ python -i
 
 # 5. Run the API
 uvicorn app.main:app --reload
+```
 
-📬 API Usage
+## 📬 API Usage
+
 Access docs at:
 ➡️ http://localhost:8000/docs
 
 Send a POST like:
-
+```bash
 {
   "question": "What does the document say about the contract duration?"
 }
-
-🔍 Model Comparison
+```
+## 🔍 Model Comparison
 Easily switch between:
 
-🔒 GPT-4 (OpenAI)
+- 🔒 GPT-4 (OpenAI)
 
-🔓 LLaMA / Mistral (HuggingFace)
+- 🔓 LLaMA / Mistral (HuggingFace)
 
-✨ Suggested Extensions
-File upload via API
+## ✨ Suggested Extensions
+- File upload via API
 
-Streamlit frontend
+- Streamlit frontend
 
-Chat history logging
+- Chat history logging
 
-Cloud deployment (Azure, AWS, HuggingFace Spaces)
+- Cloud deployment (Azure, AWS, HuggingFace Spaces)
